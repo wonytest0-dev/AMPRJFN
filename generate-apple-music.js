@@ -1,68 +1,36 @@
 const fs = require("fs");
-const { chromium } =
-  require("playwright");
+const { chromium } = require("playwright");
 
-const urls =
-  require("./appleMusicUrls");
+const urls = require("./appleMusicUrls");
+const songImages = require("./songImages.js");
 
-const songImages =
-  require(
-    "./songImages"
-  );
-
-const historyPath =
-  "./apple-music-history.json";
-
-const outputPath =
-  "./apple-music.json";
-
-const globalHistoryPath =
-  "./global-history.json";
+const historyPath = "./apple-music-history.json";
+const outputPath = "./apple-music.json";
+const globalHistoryPath = "./global-history.json";
 
 function getHistory() {
-
   try {
-
-    if (
-      fs.existsSync(
-        historyPath
-      )
-    ) {
-
+    if (fs.existsSync(historyPath)) {
       return JSON.parse(
-        fs.readFileSync(
-          historyPath,
-          "utf8"
-        )
+        fs.readFileSync(historyPath, "utf8")
       );
     }
 
     return {
-      lastUpdated:
-        "",
+      lastUpdated: "",
       entries: []
     };
-
   } catch {
-
     return {
-      lastUpdated:
-        "",
+      lastUpdated: "",
       entries: []
     };
   }
 }
 
 function getGlobalHistory() {
-
   try {
-
-    if (
-      fs.existsSync(
-        globalHistoryPath
-      )
-    ) {
-
+    if (fs.existsSync(globalHistoryPath)) {
       return JSON.parse(
         fs.readFileSync(
           globalHistoryPath,
@@ -74,24 +42,17 @@ function getGlobalHistory() {
     return {
       entries: []
     };
-
   } catch {
-
     return {
       entries: []
     };
   }
 }
 
-function isJiminSong(
-  artist
-) {
-
+function isJiminSong(artist) {
   return artist
     .toLowerCase()
-    .includes(
-      "jimin"
-    );
+    .includes("jimin");
 }
 
 async function scrapeCountry(
@@ -99,40 +60,29 @@ async function scrapeCountry(
   country,
   url
 ) {
-
   console.log(
     `🌍 Scraping ${country}`
   );
 
   try {
-
-    await page.goto(
-      url,
-      {
-        waitUntil:
-          "domcontentloaded",
-
-        timeout:
-          45000
-      }
-    );
+    await page.goto(url, {
+      waitUntil:
+        "domcontentloaded",
+      timeout: 45000
+    });
 
     await page.waitForSelector(
       '[data-testid="track-list-item"]',
       {
-        timeout:
-          15000
+        timeout: 15000
       }
     );
 
     const entries =
       await page.evaluate(
-        (
-          country
-        ) => {
+        country => {
 
-          const songs =
-            [];
+          const songs = [];
 
           const rows =
             document.querySelectorAll(
@@ -140,10 +90,7 @@ async function scrapeCountry(
             );
 
           rows.forEach(
-            (
-              row,
-              index
-            ) => {
+            (row, index) => {
 
               const aria =
                 row.getAttribute(
@@ -151,8 +98,7 @@ async function scrapeCountry(
                 ) || "";
 
               const parts =
-                aria
-                  .split(",");
+                aria.split(",");
 
               const title =
                 parts[0]
@@ -162,22 +108,14 @@ async function scrapeCountry(
                 parts[1]
                   ?.trim() || "";
 
-              if (
-                title
-              ) {
-
-                songs.push(
-                  {
-                    country,
-
-                    rank:
-                      index + 1,
-
-                    title,
-
-                    artist
-                  }
-                );
+              if (title) {
+                songs.push({
+                  country,
+                  rank:
+                    index + 1,
+                  title,
+                  artist
+                });
               }
             }
           );
@@ -193,9 +131,7 @@ async function scrapeCountry(
 
     return entries;
 
-  } catch (
-    err
-  ) {
+  } catch (err) {
 
     console.log(
       `❌ ${country}:`,
@@ -232,18 +168,12 @@ async function generateAppleMusic() {
 
       if (
         [
-          "image",
           "font",
           "media"
-        ].includes(
-          type
-        )
+        ].includes(type)
       ) {
-
         route.abort();
-
       } else {
-
         route.continue();
       }
     }
@@ -256,8 +186,7 @@ async function generateAppleMusic() {
     getGlobalHistory();
 
   const previousEntries =
-    history.entries ||
-    [];
+    history.entries || [];
 
   const global =
     urls.find(
@@ -289,7 +218,6 @@ async function generateAppleMusic() {
         item => ({
           rank:
             item.rank,
-
           title:
             item.title
         })
@@ -300,13 +228,11 @@ async function generateAppleMusic() {
     oldGlobal ===
     newGlobal
   ) {
-
     console.log(
       "🟰 Apple Music not updated yet"
     );
 
     await browser.close();
-
     return;
   }
 
@@ -323,7 +249,6 @@ async function generateAppleMusic() {
             item => ({
               rank:
                 item.rank,
-
               title:
                 item.title
             })
@@ -340,126 +265,102 @@ async function generateAppleMusic() {
   const BATCH_SIZE =
     15;
 
-for (
-  let i = 0;
-  i < urls.length;
-  i += BATCH_SIZE
-) {
+  for (
+    let i = 0;
+    i < urls.length;
+    i += BATCH_SIZE
+  ) {
 
-  const batch =
-    urls.slice(
-      i,
-      i + BATCH_SIZE
-    );
+    const batch =
+      urls.slice(
+        i,
+        i + BATCH_SIZE
+      );
 
-  const results =
-    await Promise.all(
-      batch.map(
-        async item => {
+    const results =
+      await Promise.all(
+        batch.map(
+          async item => {
 
-          const page =
-            await context.newPage();
+            const page =
+              await context.newPage();
 
-          const songs =
-            await scrapeCountry(
-              page,
-              item.country,
-              item.url
+            const songs =
+              await scrapeCountry(
+                page,
+                item.country,
+                item.url
+              );
+
+            await page.close();
+
+            return songs.filter(
+              song =>
+                isJiminSong(
+                  song.artist
+                )
             );
+          }
+        )
+      );
 
-          await page.close();
-
-          return songs.filter(
-            song =>
-              isJiminSong(
-                song.artist
-              )
-          );
-        }
-      )
+    jiminEntries.push(
+      ...results.flat()
     );
 
-  jiminEntries.push(
-    ...results.flat()
-  );
+    console.log(
+      `✅ Batch ${
+        Math.floor(
+          i / BATCH_SIZE
+        ) + 1
+      } finished`
+    );
+  }
 
-  console.log(
-    `✅ Batch ${
-      Math.floor(
-        i / BATCH_SIZE
-      ) + 1
-    } finished`
-  );
-}
+  const finalEntries =
+    jiminEntries.map(
+      current => {
+        const previous =
+          previousEntries.find(
+            item =>
+              item.country ===
+                current.country &&
+              item.title ===
+                current.title
+          );
 
-const finalEntries =
-  jiminEntries.map(
-    current => {
+        let status = "NEW";
+        let change = "NEW";
+        let previousRank = null;
 
-      const previous =
-        previousEntries.find(
-          item =>
-            item.country ===
-              current.country &&
-            item.title ===
-              current.title
-        );
+        if (previous) {
 
-      let status =
-        "NEW";
+          previousRank =
+            previous.rank;
 
-      let change =
-        "NEW";
+          const diff =
+            previous.rank -
+            current.rank;
 
-      let previousRank =
-        null;
+          if (diff > 0) {
+            status = "up";
+            change = `+${diff}`;
 
-      if (
-        previous
-      ) {
+          } else if (
+            diff < 0
+          ) {
+            status = "down";
+            change = `${diff}`;
 
-        previousRank =
-          previous.rank;
-
-        const diff =
-          previous.rank -
-          current.rank;
-
-        if (
-          diff > 0
-        ) {
-
-          status =
-            "up";
-
-          change =
-            `+${diff}`;
-
-        } else if (
-          diff < 0
-        ) {
-
-          status =
-            "down";
-
-          change =
-            `${diff}`;
+          } else {
+            status = "stable";
+            change = "—";
+          }
 
         } else {
 
-          status =
-            "stable";
-
-          change =
-            "—";
-        }
-
-      } else {
-
-        const appearedBefore =
-          history
-            .entries
-            ?.some(
+          const appearedBefore =
+            history.entries?.some(
               old =>
                 old.title ===
                   current.title &&
@@ -467,59 +368,71 @@ const finalEntries =
                   current.country
             );
 
-        if (
-          appearedBefore
-        ) {
-
-          status =
-            "RE";
-
-          change =
-            "RE";
+          if (
+            appearedBefore
+          ) {
+            status = "RE";
+            change = "RE";
+          }
         }
-      }
 
-      return {
+        const cleanTitle =
+          current.title
+            .trim()
+            .replace(
+              /\s+/g,
+              " "
+            );
 
-        country:
-          current.country,
-
-        rank:
-          current.rank,
-
-        previousRank,
-
-        change,
-
-        status,
-
-        title:
-          current.title,
-
-        artist:
-          current.artist,
-
-        image:
+        const image =
           songImages[
-            current.title
-          ] ||
-          "/images/default.jpg"
-      };
-    }
-  );
+            cleanTitle
+          ];
 
-const today =
-  new Date()
-    .toLocaleDateString(
-      "en-CA",
-      {
-        timeZone:
-          "Asia/Jakarta"
+        if (!image) {
+          console.log(
+            "NO IMAGE:",
+            cleanTitle
+          );
+        }
+
+        return {
+          country:
+            current.country,
+
+          rank:
+            current.rank,
+
+          previousRank,
+
+          change,
+
+          status,
+
+          title:
+            current.title,
+
+          artist:
+            current.artist,
+
+          image:
+            image ||
+            "/images/default.jpg"
+        };
       }
     );
 
-const output =
-  {
+  const today =
+    new Date()
+      .toLocaleDateString(
+        "en-CA",
+        {
+          timeZone:
+            "Asia/Jakarta"
+        }
+      );
+
+  const output = {
     updatedDate:
       today,
 
@@ -529,95 +442,85 @@ const output =
 
     entries:
       finalEntries.sort(
-        (
-          a,
-          b
-        ) =>
+        (a, b) =>
           a.rank -
           b.rank
       )
   };
 
-const oldString =
-  JSON.stringify(
-    previousEntries.map(
-      item => ({
-        country:
-          item.country,
+  const oldString =
+    JSON.stringify(
+      previousEntries.map(
+        item => ({
+          country:
+            item.country,
+          title:
+            item.title,
+          rank:
+            item.rank
+        })
+      )
+    );
 
-        title:
-          item.title,
+  const newString =
+    JSON.stringify(
+      finalEntries.map(
+        item => ({
+          country:
+            item.country,
+          title:
+            item.title,
+          rank:
+            item.rank
+        })
+      )
+    );
 
-        rank:
-          item.rank
-      })
-    )
-  );
+  const chartChanged =
+    oldString !==
+    newString;
 
-const newString =
-  JSON.stringify(
-    finalEntries.map(
-      item => ({
-        country:
-          item.country,
+  if (chartChanged) {
 
-        title:
-          item.title,
+    fs.writeFileSync(
+      historyPath,
+      JSON.stringify(
+        {
+          lastUpdated:
+            today,
+          entries:
+            finalEntries
+        },
+        null,
+        2
+      )
+    );
 
-        rank:
-          item.rank
-      })
-    )
-  );
+    console.log(
+      "📈 Apple Music chart updated"
+    );
 
-const chartChanged =
-  oldString !==
-  newString;
+  } else {
 
-if (
-  chartChanged
-) {
+    console.log(
+      "🟰 No chart changes"
+    );
+  }
 
   fs.writeFileSync(
-    historyPath,
+    outputPath,
     JSON.stringify(
-      {
-        lastUpdated:
-          today,
-
-        entries:
-          finalEntries
-      },
+      output,
       null,
       2
     )
   );
 
   console.log(
-    "📈 Apple Music chart updated"
+    `🔥 ${finalEntries.length} Jimin entries found`
   );
 
-} else {
-
-  console.log(
-    "🟰 No chart changes"
-  );
-}
-
-fs.writeFileSync(
-  outputPath,
-  JSON.stringify(
-    output,
-    null,
-    2
-  )
-);
-
-console.log(
-  `🔥 ${finalEntries.length} Jimin entries found`
-);
-
-await browser.close();
+  await browser.close();
 }
 
 generateAppleMusic()
