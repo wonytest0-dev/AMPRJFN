@@ -1,104 +1,125 @@
 {
-  "lastUpdated": "2026-05-21",
+  "lastUpdated": "2026-05-22",
   "entries": [
     {
       "country": "Uzbekistan",
-      "rank": 7,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
+      "rank": 8,
+      "previousRank": 7,
+      "change": "-1",
+      "status": "down",
       "title": "Who",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
-      "rank": 9,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
+      "rank": 12,
+      "previousRank": 9,
+      "change": "-3",
+      "status": "down",
       "title": "Who",
-      "artist": "Jimin"
-    },
-    {
-      "country": "Belarus",
-      "rank": 16,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
-      "title": "Be Mine",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Russia",
-      "rank": 22,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
+      "rank": 24,
+      "previousRank": 22,
+      "change": "-2",
+      "status": "down",
       "title": "Who",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
-      "rank": 46,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
-      "title": "Rebirth (Intro)",
-      "artist": "Jimin"
+      "rank": 27,
+      "previousRank": 16,
+      "change": "-11",
+      "status": "down",
+      "title": "Be Mine",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
       "rank": 53,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
+      "previousRank": 53,
+      "change": "—",
+      "status": "stable",
       "title": "Like Crazy",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
-      "rank": 63,
+      "rank": 55,
+      "previousRank": 46,
+      "change": "-9",
+      "status": "down",
+      "title": "Rebirth (Intro)",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
+    },
+    {
+      "country": "Bahrain",
+      "rank": 61,
       "previousRank": null,
       "change": "NEW",
       "status": "NEW",
+      "title": "Who",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
+    },
+    {
+      "country": "Belarus",
+      "rank": 68,
+      "previousRank": 63,
+      "change": "-5",
+      "status": "down",
       "title": "Slow Dance (feat. Sofia Carson)",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Uzbekistan",
-      "rank": 65,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
-      "title": "Be Mine",
-      "artist": "Jimin"
-    },
-    {
-      "country": "Belarus",
-      "rank": 72,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
-      "title": "Smeraldo Garden Marching Band",
-      "artist": "Jimin & Loco"
-    },
-    {
-      "country": "Belarus",
       "rank": 73,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
-      "title": "Closer Than This",
-      "artist": "Jimin"
+      "previousRank": 65,
+      "change": "-8",
+      "status": "down",
+      "title": "Be Mine",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
-      "rank": 79,
-      "previousRank": null,
-      "change": "NEW",
-      "status": "NEW",
+      "rank": 86,
+      "previousRank": 72,
+      "change": "-14",
+      "status": "down",
+      "title": "Smeraldo Garden Marching Band",
+      "artist": "Jimin & Loco",
+      "image": "/images/default.jpg"
+    },
+    {
+      "country": "Belarus",
+      "rank": 93,
+      "previousRank": 73,
+      "change": "-20",
+      "status": "down",
+      "title": "Closer Than This",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
+    },
+    {
+      "country": "Belarus",
+      "rank": 99,
+      "previousRank": 79,
+      "change": "-20",
+      "status": "down",
       "title": "Interlude : Showtime",
-      "artist": "Jimin"
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
     }
   ]
 }
