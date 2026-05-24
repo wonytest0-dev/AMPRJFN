@@ -384,19 +384,34 @@ async function generateAppleMusic() {
               " "
             );
 
+        
         const image =
-          songImages[
-            cleanTitle
-          ];
+songImages[
+cleanTitle
+] ||
 
-        if (!image) {
-          console.log(
-            "NO IMAGE:",
-            cleanTitle
-          );
-        }
+Object.entries(
+songImages
+).find(
+([key]) =>
 
-        return {
+cleanTitle
+.toLowerCase()
+.includes(
+key.toLowerCase()
+)
+
+)?.[1];
+
+if(!image){
+console.log(
+"NO IMAGE:",
+cleanTitle
+);
+}
+
+
+       return {
           country:
             current.country,
 
