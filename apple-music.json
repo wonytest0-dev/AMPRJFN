@@ -1,52 +1,52 @@
 {
-  "updatedDate": "2026-05-23",
-  "totalEntries": 8,
+  "updatedDate": "2026-05-24",
+  "totalEntries": 6,
   "entries": [
     {
+      "country": "Belarus",
+      "rank": 9,
+      "previousRank": 19,
+      "change": "+10",
+      "status": "up",
+      "title": "Who",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
+    },
+    {
       "country": "Uzbekistan",
-      "rank": 14,
-      "previousRank": 8,
-      "change": "-6",
-      "status": "down",
+      "rank": 13,
+      "previousRank": 14,
+      "change": "+1",
+      "status": "up",
       "title": "Who",
       "artist": "Jimin",
       "image": "/images/default.jpg"
     },
     {
       "country": "Belarus",
-      "rank": 19,
-      "previousRank": 12,
-      "change": "-7",
-      "status": "down",
-      "title": "Who",
-      "artist": "Jimin",
-      "image": "/images/default.jpg"
-    },
-    {
-      "country": "Russia",
-      "rank": 28,
-      "previousRank": 24,
-      "change": "-4",
-      "status": "down",
-      "title": "Who",
-      "artist": "Jimin",
-      "image": "/images/default.jpg"
-    },
-    {
-      "country": "Belarus",
-      "rank": 41,
-      "previousRank": 27,
-      "change": "-14",
-      "status": "down",
+      "rank": 23,
+      "previousRank": 41,
+      "change": "+18",
+      "status": "up",
       "title": "Be Mine",
       "artist": "Jimin",
       "image": "/images/default.jpg"
     },
     {
+      "country": "Russia",
+      "rank": 27,
+      "previousRank": 28,
+      "change": "+1",
+      "status": "up",
+      "title": "Who",
+      "artist": "Jimin",
+      "image": "/images/default.jpg"
+    },
+    {
       "country": "Belarus",
-      "rank": 61,
-      "previousRank": 53,
-      "change": "-8",
+      "rank": 67,
+      "previousRank": 61,
+      "change": "-6",
       "status": "down",
       "title": "Like Crazy",
       "artist": "Jimin",
@@ -54,31 +54,11 @@
     },
     {
       "country": "Belarus",
-      "rank": 66,
-      "previousRank": 55,
-      "change": "-11",
+      "rank": 71,
+      "previousRank": 66,
+      "change": "-5",
       "status": "down",
       "title": "Rebirth (Intro)",
-      "artist": "Jimin",
-      "image": "/images/default.jpg"
-    },
-    {
-      "country": "Belarus",
-      "rank": 86,
-      "previousRank": 68,
-      "change": "-18",
-      "status": "down",
-      "title": "Slow Dance (feat. Sofia Carson)",
-      "artist": "Jimin",
-      "image": "/images/default.jpg"
-    },
-    {
-      "country": "Uzbekistan",
-      "rank": 90,
-      "previousRank": 73,
-      "change": "-17",
-      "status": "down",
-      "title": "Be Mine",
       "artist": "Jimin",
       "image": "/images/default.jpg"
     }
