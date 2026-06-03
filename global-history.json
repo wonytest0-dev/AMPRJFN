@@ -50,11 +50,11 @@
     },
     {
       "rank": 13,
-      "title": "Billie Jean"
+      "title": "Explicit"
     },
     {
       "rank": 14,
-      "title": "Explicit"
+      "title": "Billie Jean"
     },
     {
       "rank": 15,
@@ -90,11 +90,11 @@
     },
     {
       "rank": 23,
-      "title": "drop dead"
+      "title": "Explicit"
     },
     {
       "rank": 24,
-      "title": "Explicit"
+      "title": "drop dead"
     },
     {
       "rank": 25,
@@ -102,11 +102,11 @@
     },
     {
       "rank": 26,
-      "title": "Five"
+      "title": "Human Nature"
     },
     {
       "rank": 27,
-      "title": "Human Nature"
+      "title": "Explicit"
     },
     {
       "rank": 28,
@@ -114,19 +114,19 @@
     },
     {
       "rank": 29,
-      "title": "Explicit"
-    },
-    {
-      "rank": 30,
       "title": "Beat It"
     },
     {
-      "rank": 31,
+      "rank": 30,
       "title": "Explicit"
     },
     {
+      "rank": 31,
+      "title": "Chicago"
+    },
+    {
       "rank": 32,
-      "title": "Golden"
+      "title": "Explicit"
     },
     {
       "rank": 33,
@@ -134,43 +134,43 @@
     },
     {
       "rank": 34,
-      "title": "Love so Sweet"
+      "title": "Five"
     },
     {
       "rank": 35,
-      "title": "Chicago"
+      "title": "Golden"
     },
     {
       "rank": 36,
-      "title": "Explicit"
-    },
-    {
-      "rank": 37,
       "title": "20 Cigarettes"
     },
     {
-      "rank": 38,
-      "title": "Happiness"
-    },
-    {
-      "rank": 39,
+      "rank": 37,
       "title": "DAISIES"
     },
     {
-      "rank": 40,
+      "rank": 38,
+      "title": "Explicit"
+    },
+    {
+      "rank": 39,
       "title": "So Easy (To Fall In Love)"
     },
     {
-      "rank": 41,
-      "title": "LEMONADE"
+      "rank": 40,
+      "title": "Love so Sweet"
     },
     {
-      "rank": 42,
+      "rank": 41,
       "title": "Ordinary"
     },
     {
+      "rank": 42,
+      "title": "The Fate of Ophelia"
+    },
+    {
       "rank": 43,
-      "title": "It's Me"
+      "title": "LEMONADE"
     },
     {
       "rank": 44,
@@ -186,7 +186,7 @@
     },
     {
       "rank": 47,
-      "title": "The Fate of Ophelia"
+      "title": "Explicit"
     },
     {
       "rank": 48,
@@ -194,11 +194,11 @@
     },
     {
       "rank": 49,
-      "title": "Explicit"
+      "title": "I'm The Problem"
     },
     {
       "rank": 50,
-      "title": "Explicit"
+      "title": "It's Me"
     },
     {
       "rank": 51,
@@ -206,7 +206,7 @@
     },
     {
       "rank": 52,
-      "title": "REDRED"
+      "title": "Happiness"
     },
     {
       "rank": 53,
@@ -214,15 +214,15 @@
     },
     {
       "rank": 54,
-      "title": "I'm The Problem"
+      "title": "Explicit"
     },
     {
       "rank": 55,
-      "title": "One Love"
+      "title": "Explicit"
     },
     {
       "rank": 56,
-      "title": "Explicit"
+      "title": "REDRED"
     },
     {
       "rank": 57,
@@ -230,11 +230,11 @@
     },
     {
       "rank": 58,
-      "title": "Explicit"
+      "title": "White Keys"
     },
     {
       "rank": 59,
-      "title": "A・RA・SHI"
+      "title": "Earrings"
     },
     {
       "rank": 60,
@@ -246,27 +246,27 @@
     },
     {
       "rank": 62,
-      "title": "Monster"
-    },
-    {
-      "rank": 63,
-      "title": "White Keys"
-    },
-    {
-      "rank": 64,
-      "title": "Earrings"
-    },
-    {
-      "rank": 65,
       "title": "Raindance"
     },
     {
+      "rank": 63,
+      "title": "Risk It All"
+    },
+    {
+      "rank": 64,
+      "title": "Explicit"
+    },
+    {
+      "rank": 65,
+      "title": "I Just Might"
+    },
+    {
       "rank": 66,
-      "title": "感謝カンゲキ雨嵐"
+      "title": "Explicit"
     },
     {
       "rank": 67,
-      "title": "Risk It All"
+      "title": "Explicit"
     },
     {
       "rank": 68,
@@ -274,39 +274,39 @@
     },
     {
       "rank": 69,
-      "title": "I Just Might"
-    },
-    {
-      "rank": 70,
-      "title": "Explicit"
-    },
-    {
-      "rank": 71,
       "title": "Baby (feat. Ludacris)"
     },
     {
-      "rank": 72,
-      "title": "Troublemaker"
-    },
-    {
-      "rank": 73,
-      "title": "Explicit"
-    },
-    {
-      "rank": 74,
-      "title": "Bad"
-    },
-    {
-      "rank": 75,
+      "rank": 70,
       "title": "Stateside (with Zara Larsson)"
     },
     {
+      "rank": 71,
+      "title": "One Love"
+    },
+    {
+      "rank": 72,
+      "title": "Explicit"
+    },
+    {
+      "rank": 73,
+      "title": "What I Want"
+    },
+    {
+      "rank": 74,
+      "title": "Just In Case"
+    },
+    {
+      "rank": 75,
+      "title": "Bad"
+    },
+    {
       "rank": 76,
-      "title": "BOOMPALA"
+      "title": "Rock With You"
     },
     {
       "rank": 77,
-      "title": "What I Want"
+      "title": "Explicit"
     },
     {
       "rank": 78,
@@ -314,23 +314,23 @@
     },
     {
       "rank": 79,
-      "title": "Rock With You"
+      "title": "Monster"
     },
     {
       "rank": 80,
-      "title": "Just In Case"
+      "title": "Explicit"
     },
     {
       "rank": 81,
-      "title": "Explicit"
+      "title": "Thriller"
     },
     {
       "rank": 82,
-      "title": "Explicit"
+      "title": "A・RA・SHI"
     },
     {
       "rank": 83,
-      "title": "Thriller"
+      "title": "Explicit"
     },
     {
       "rank": 84,
@@ -338,43 +338,43 @@
     },
     {
       "rank": 85,
-      "title": "Explicit"
-    },
-    {
-      "rank": 86,
       "title": "YUKON"
     },
     {
+      "rank": 86,
+      "title": "Explicit"
+    },
+    {
       "rank": 87,
-      "title": "Explicit"
-    },
-    {
-      "rank": 88,
-      "title": "Explicit"
-    },
-    {
-      "rank": 89,
       "title": "Spin You Around (1/24)"
     },
     {
-      "rank": 90,
+      "rank": 88,
       "title": "Die With A Smile"
     },
     {
-      "rank": 91,
-      "title": "Mr. Brightside"
+      "rank": 89,
+      "title": "BOOMPALA"
     },
     {
-      "rank": 92,
-      "title": "WDA (Whole Different Animal) [feat. G-DRAGON]"
-    },
-    {
-      "rank": 93,
+      "rank": 90,
       "title": "Explicit"
     },
     {
+      "rank": 91,
+      "title": "Explicit"
+    },
+    {
+      "rank": 92,
+      "title": "Mr. Brightside"
+    },
+    {
+      "rank": 93,
+      "title": "感謝カンゲキ雨嵐"
+    },
+    {
       "rank": 94,
-      "title": "Dandelion"
+      "title": "Freakin’ Out"
     },
     {
       "rank": 95,
@@ -382,23 +382,23 @@
     },
     {
       "rank": 96,
-      "title": "Explicit"
+      "title": "Dandelion"
     },
     {
       "rank": 97,
-      "title": "言葉より大切なもの"
+      "title": "Explicit"
     },
     {
       "rank": 98,
-      "title": "Freakin’ Out"
-    },
-    {
-      "rank": 99,
       "title": "weren't for the wind"
     },
     {
+      "rank": 99,
+      "title": "Opalite"
+    },
+    {
       "rank": 100,
-      "title": "Lush Life"
+      "title": "Troublemaker"
     }
   ]
 }
