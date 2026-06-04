@@ -2,10 +2,10 @@ const fs = require("fs");
 const { chromium } = require("playwright");
 
 const urls = require("./appleMusicUrls");
-const songImages = require("./songImages.js");
 
 const historyPath = "./apple-music-history.json";
 const outputPath = "./apple-music.json";
+const allHistoryPath ="./apple-music-all-history.json";
 const globalHistoryPath = "./global-history.json";
 
 function getHistory() {
@@ -48,6 +48,31 @@ function getGlobalHistory() {
     };
   }
 }
+
+function getAllHistory() {
+  try {
+    if (
+      fs.existsSync(
+        allHistoryPath
+      )
+    ) {
+      return JSON.parse(
+        fs.readFileSync(
+          allHistoryPath,
+          "utf8"
+        )
+      );
+    }
+
+    return [];
+
+  } catch {
+
+    return [];
+
+  }
+}
+
 
 function isJiminSong(artist) {
   return artist
@@ -108,15 +133,36 @@ async function scrapeCountry(
                 parts[1]
                   ?.trim() || "";
 
-              if (title) {
-                songs.push({
-                  country,
-                  rank:
-                    index + 1,
-                  title,
-                  artist
-                });
-              }
+            const image =
+  row.querySelector(
+    "picture source"
+  )
+  ?.getAttribute(
+    "srcset"
+  )
+  ?.split(" ")[0]
+  || "";
+
+const songLink =
+  row.querySelector(
+    '[data-testid="track-title"]'
+  )
+  ?.closest("a")
+  ?.href
+  || "";
+
+if (title) {
+  songs.push({
+    country,
+    rank:
+      index + 1,
+    title,
+    artist,
+    image,
+    songLink
+  });
+}
+
             }
           );
 
@@ -181,6 +227,9 @@ async function generateAppleMusic() {
 
   const history =
     getHistory();
+
+  const allHistory =
+  getAllHistory();
 
   const globalHistory =
     getGlobalHistory();
@@ -359,14 +408,15 @@ async function generateAppleMusic() {
 
         } else {
 
-          const appearedBefore =
-            history.entries?.some(
-              old =>
-                old.title ===
-                  current.title &&
-                old.country ===
-                  current.country
-            );
+         const appearedBefore =
+  allHistory.some(
+    old =>
+      old.title ===
+        current.title &&
+      old.country ===
+        current.country
+  );
+
 
           if (
             appearedBefore
@@ -375,67 +425,79 @@ async function generateAppleMusic() {
             change = "RE";
           }
         }
+ return {
+  country:
+    current.country,
 
-        const cleanTitle =
-          current.title
-            .trim()
-            .replace(
-              /\s+/g,
-              " "
-            );
+  rank:
+    current.rank,
 
-        
-        const image =
-songImages[
-cleanTitle
-] ||
+  previousRank,
 
-Object.entries(
-songImages
-).find(
-([key]) =>
+  change,
 
-cleanTitle
-.toLowerCase()
-.includes(
-key.toLowerCase()
-)
+  status,
 
-)?.[1];
+  title:
+    current.title,
 
-if(!image){
-console.log(
-"NO IMAGE:",
-cleanTitle
-);
-}
+  artist:
+    current.artist,
+
+  image:
+    current.image ||
+    "/images/default.jpg",
+
+  songLink:
+    current.songLink ||
+    null
+};
 
 
-       return {
-          country:
-            current.country,
-
-          rank:
-            current.rank,
-
-          previousRank,
-
-          change,
-
-          status,
-
-          title:
-            current.title,
-
-          artist:
-            current.artist,
-
-          image:
-            image ||
-            "/images/default.jpg"
-        };
+     
       }
     );
+
+    const mergedHistory = [
+  ...allHistory
+];
+
+finalEntries.forEach(
+  song => {
+
+    const exists =
+      mergedHistory.find(
+        x =>
+          x.country ===
+            song.country &&
+          x.title ===
+            song.title
+      );
+
+    if (!exists) {
+
+      mergedHistory.push({
+        country:
+          song.country,
+
+        title:
+          song.title
+      });
+
+    }
+
+  }
+);
+
+fs.writeFileSync(
+  allHistoryPath,
+  JSON.stringify(
+    mergedHistory,
+    null,
+    2
+  )
+);
+
 
   const today =
     new Date()
