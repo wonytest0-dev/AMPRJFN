@@ -1,12 +1,6 @@
 name: Apple Music Top 100
 
 on:
-  schedule:
-    # 12:00 PM - 3:00 PM WIB
-    # tiap 30 menit
-    - cron: "0,30 5-8 * * *"
-    - cron: "0 9 * * *"
-
   workflow_dispatch:
 
 jobs:
