@@ -99,7 +99,7 @@ async function scrapeCountry(
     await page.waitForSelector(
       '[data-testid="track-list-item"]',
       {
-        timeout: 15000
+        timeout: 30000
       }
     );
 
