@@ -16,7 +16,7 @@ jobs:
 
       - name: Clone private repo
         run: |
-          git clone https://x-access-token:${{ secrets.PRIVATE_REPO_PAT }}@github.com/wonytest0-dev/apple-music-private.git
+          git clone https://x-access-token:${{ secrets.PAT_APPLE_DAILY }}@github.com/wonytest0-dev/apple-music-private.git
 
       - name: Setup Node
         uses: actions/setup-node@v4
