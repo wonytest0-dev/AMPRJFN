@@ -1,4 +1,4 @@
-name: Update Apple Music Counter
+name: Update Apple Music
 
 on:
   workflow_dispatch:
