@@ -1,10 +1,10 @@
-name: Apple Music Top 100
+name: Update Apple Music Counter
 
 on:
   workflow_dispatch:
 
 jobs:
-  scrape:
+  update-apple-music:
     runs-on: ubuntu-latest
 
     permissions:
@@ -18,7 +18,7 @@ jobs:
         run: |
           git clone https://x-access-token:${{ secrets.PRIVATE_REPO_PAT }}@github.com/wonytest0-dev/apple-music-private.git
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -31,35 +31,36 @@ jobs:
         working-directory: apple-music-private
         run: npx playwright install chromium --with-deps
 
-      - name: Restore secrets/config (if needed)
+      - name: Restore config (if needed)
         run: |
-          echo '${{ secrets.APPLE_CONFIG_JSON }}' > apple-music-private/config.json
+          cat << 'EOF' > apple-music-private/config.json
+          ${{ secrets.APPLE_CONFIG_JSON }}
+          EOF
 
-      - name: Copy history into private repo
+      - name: Copy history files to private repo
         run: |
           cp apple-music-history.json apple-music-private/ || true
           cp apple-music-all-history.json apple-music-private/ || true
           cp global-history.json apple-music-private/ || true
 
-      - name: Run scraper
+      - name: Run Apple Music scraper
         working-directory: apple-music-private
         run: node generate-apple-music.js
 
-      - name: Copy output back to public repo
+      - name: Copy generated files
         run: |
-          cp -f apple-music-private/apple-music.json . 2>/dev/null || true
-          cp -f apple-music-private/apple-music-history.json . 2>/dev/null || true
-          cp -f apple-music-private/apple-music-all-history.json . 2>/dev/null || true
-          cp -f apple-music-private/global-history.json . 2>/dev/null || true
+          cp -f apple-music-private/*.json . 2>/dev/null || true
 
-      - name: Commit results
+      - name: Commit updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add apple-music.json apple-music-history.json apple-music-all-history.json global-history.json
+          git add apple-music.json
+          git add apple-music-history.json
+          git add apple-music-all-history.json
+          git add global-history.json
 
-          git diff --staged --quiet && echo "🟰 No changes" && exit 0
+          git diff --staged --quiet || git commit -m "update apple music counter"
 
-          git commit -m "Auto update Apple Music chart"
           git push
