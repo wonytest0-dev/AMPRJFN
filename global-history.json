@@ -30,15 +30,15 @@
     },
     {
       "rank": 8,
-      "title": "Explicit"
-    },
-    {
-      "rank": 9,
       "title": "Billie Jean"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "title": "I Knew It"
+    },
+    {
+      "rank": 10,
+      "title": "Explicit"
     },
     {
       "rank": 11,
@@ -46,7 +46,7 @@
     },
     {
       "rank": 12,
-      "title": "Explicit"
+      "title": "Be Her"
     },
     {
       "rank": 13,
@@ -54,7 +54,7 @@
     },
     {
       "rank": 14,
-      "title": "Be Her"
+      "title": "Explicit"
     },
     {
       "rank": 15,
@@ -62,35 +62,35 @@
     },
     {
       "rank": 16,
-      "title": "Explicit"
-    },
-    {
-      "rank": 17,
       "title": "Beauty and a Beat (feat. Nicki Minaj)"
     },
     {
-      "rank": 18,
+      "rank": 17,
       "title": "Man I Need"
     },
     {
+      "rank": 18,
+      "title": "Explicit"
+    },
+    {
       "rank": 19,
-      "title": "I Can't Love You Anymore"
+      "title": "Explicit"
     },
     {
       "rank": 20,
-      "title": "Explicit"
+      "title": "I Can't Love You Anymore"
     },
     {
       "rank": 21,
-      "title": "what’s wrong with me"
+      "title": "Beat It"
     },
     {
       "rank": 22,
-      "title": "Explicit"
+      "title": "what’s wrong with me"
     },
     {
       "rank": 23,
-      "title": "Beat It"
+      "title": "Explicit"
     },
     {
       "rank": 24,
@@ -98,15 +98,15 @@
     },
     {
       "rank": 25,
-      "title": "expectations"
-    },
-    {
-      "rank": 26,
       "title": "less"
     },
     {
+      "rank": 26,
+      "title": "expectations"
+    },
+    {
       "rank": 27,
-      "title": "Explicit"
+      "title": "Golden"
     },
     {
       "rank": 28,
@@ -118,19 +118,19 @@
     },
     {
       "rank": 30,
-      "title": "Golden"
+      "title": "Human Nature"
     },
     {
       "rank": 31,
-      "title": "Explicit"
-    },
-    {
-      "rank": 32,
       "title": "20 Cigarettes"
     },
     {
+      "rank": 32,
+      "title": "Explicit"
+    },
+    {
       "rank": 33,
-      "title": "Human Nature"
+      "title": "Explicit"
     },
     {
       "rank": 34,
@@ -138,35 +138,35 @@
     },
     {
       "rank": 35,
-      "title": "Explicit"
-    },
-    {
-      "rank": 36,
-      "title": "purple"
-    },
-    {
-      "rank": 37,
-      "title": "Dai Dai"
-    },
-    {
-      "rank": 38,
       "title": "The Fate of Ophelia"
     },
     {
-      "rank": 39,
+      "rank": 36,
+      "title": "Dai Dai"
+    },
+    {
+      "rank": 37,
       "title": "Explicit"
+    },
+    {
+      "rank": 38,
+      "title": "Explicit"
+    },
+    {
+      "rank": 39,
+      "title": "It's Me"
     },
     {
       "rank": 40,
-      "title": "Explicit"
+      "title": "Chicago"
     },
     {
       "rank": 41,
-      "title": "Explicit"
+      "title": "purple"
     },
     {
       "rank": 42,
-      "title": "Explicit"
+      "title": "DAISIES"
     },
     {
       "rank": 43,
@@ -174,7 +174,7 @@
     },
     {
       "rank": 44,
-      "title": "Chicago"
+      "title": "I'm The Problem"
     },
     {
       "rank": 45,
@@ -182,7 +182,7 @@
     },
     {
       "rank": 46,
-      "title": "I'm The Problem"
+      "title": "Explicit"
     },
     {
       "rank": 47,
@@ -190,19 +190,19 @@
     },
     {
       "rank": 48,
-      "title": "DAISIES"
+      "title": "Explicit"
     },
     {
       "rank": 49,
-      "title": "It's Me"
+      "title": "Smooth Criminal"
     },
     {
       "rank": 50,
-      "title": "Ordinary"
+      "title": "Explicit"
     },
     {
       "rank": 51,
-      "title": "Smooth Criminal"
+      "title": "Don't Stop 'Til You Get Enough"
     },
     {
       "rank": 52,
@@ -210,7 +210,7 @@
     },
     {
       "rank": 53,
-      "title": "Don't Stop 'Til You Get Enough"
+      "title": "Ordinary"
     },
     {
       "rank": 54,
@@ -218,7 +218,7 @@
     },
     {
       "rank": 55,
-      "title": "Explicit"
+      "title": "Thriller"
     },
     {
       "rank": 56,
@@ -234,15 +234,15 @@
     },
     {
       "rank": 59,
-      "title": "Thriller"
+      "title": "Bad"
     },
     {
       "rank": 60,
-      "title": "Explicit"
+      "title": "REDRED"
     },
     {
       "rank": 61,
-      "title": "Bad"
+      "title": "Explicit"
     },
     {
       "rank": 62,
@@ -258,7 +258,7 @@
     },
     {
       "rank": 65,
-      "title": "Explicit"
+      "title": "SWIM"
     },
     {
       "rank": 66,
@@ -266,67 +266,67 @@
     },
     {
       "rank": 67,
-      "title": "So Easy (To Fall In Love)"
-    },
-    {
-      "rank": 68,
-      "title": "Life Goes On"
-    },
-    {
-      "rank": 69,
-      "title": "Spin You Around (1/24)"
-    },
-    {
-      "rank": 70,
-      "title": "SWIM"
-    },
-    {
-      "rank": 71,
-      "title": "Rock With You"
-    },
-    {
-      "rank": 72,
-      "title": "weren't for the wind"
-    },
-    {
-      "rank": 73,
       "title": "Karasu - Raven"
     },
     {
-      "rank": 74,
+      "rank": 68,
+      "title": "So Easy (To Fall In Love)"
+    },
+    {
+      "rank": 69,
+      "title": "Rock With You"
+    },
+    {
+      "rank": 70,
+      "title": "Spin You Around (1/24)"
+    },
+    {
+      "rank": 71,
       "title": "Explicit"
     },
     {
-      "rank": 75,
-      "title": "Mr. Brightside"
-    },
-    {
-      "rank": 76,
-      "title": "Dirty Diana"
-    },
-    {
-      "rank": 77,
+      "rank": 72,
       "title": "Earrings"
     },
     {
-      "rank": 78,
-      "title": "Cowgirls (feat. ERNEST)"
-    },
-    {
-      "rank": 79,
+      "rank": 73,
       "title": "Explicit"
     },
     {
-      "rank": 80,
+      "rank": 74,
+      "title": "weren't for the wind"
+    },
+    {
+      "rank": 75,
+      "title": "Dirty Diana"
+    },
+    {
+      "rank": 76,
+      "title": "Life Goes On"
+    },
+    {
+      "rank": 77,
+      "title": "LEMONADE"
+    },
+    {
+      "rank": 78,
       "title": "Raindance"
     },
     {
-      "rank": 81,
+      "rank": 79,
+      "title": "Cowgirls (feat. ERNEST)"
+    },
+    {
+      "rank": 80,
       "title": "Explicit"
     },
     {
+      "rank": 81,
+      "title": "Die With A Smile"
+    },
+    {
       "rank": 82,
-      "title": "Explicit"
+      "title": "Mr. Brightside"
     },
     {
       "rank": 83,
@@ -334,11 +334,11 @@
     },
     {
       "rank": 84,
-      "title": "REDRED"
+      "title": "Explicit"
     },
     {
       "rank": 85,
-      "title": "Yoru No Odoriko"
+      "title": "Stateside (with Zara Larsson)"
     },
     {
       "rank": 86,
@@ -346,7 +346,7 @@
     },
     {
       "rank": 87,
-      "title": "Stateside (with Zara Larsson)"
+      "title": "IRIS OUT"
     },
     {
       "rank": 88,
@@ -358,19 +358,19 @@
     },
     {
       "rank": 90,
-      "title": "Explicit"
+      "title": "Beautiful Things"
     },
     {
       "rank": 91,
-      "title": "Thinkin’ Bout Me"
+      "title": "Yoru No Odoriko"
     },
     {
       "rank": 92,
-      "title": "Die With A Smile"
+      "title": "Thinkin’ Bout Me"
     },
     {
       "rank": 93,
-      "title": "Beautiful Things"
+      "title": "Explicit"
     },
     {
       "rank": 94,
@@ -382,23 +382,23 @@
     },
     {
       "rank": 96,
-      "title": "IRIS OUT"
-    },
-    {
-      "rank": 97,
-      "title": "Folded"
-    },
-    {
-      "rank": 98,
-      "title": "White Keys"
-    },
-    {
-      "rank": 99,
       "title": "Shape of You"
     },
     {
+      "rank": 97,
+      "title": "Orbiter"
+    },
+    {
+      "rank": 98,
+      "title": "Folded"
+    },
+    {
+      "rank": 99,
+      "title": "White Keys"
+    },
+    {
       "rank": 100,
-      "title": "Tennessee Whiskey"
+      "title": "Explicit"
     }
   ]
 }
