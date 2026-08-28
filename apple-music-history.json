@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-08-28",
   "entries": [
     {
       "country": "Belarus",
       "rank": 3,
-      "previousRank": 7,
-      "change": "+4",
-      "status": "up",
+      "previousRank": 3,
+      "change": "—",
+      "status": "stable",
       "title": "Who",
       "artist": "Jimin",
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/b5/84/94b58450-a0cd-ab97-2f30-0ed3608b5e24/196922987588_Cover.jpg/40x40bb.webp",
@@ -14,9 +14,9 @@
     },
     {
       "country": "Belarus",
-      "rank": 7,
-      "previousRank": 14,
-      "change": "+7",
+      "rank": 4,
+      "previousRank": 7,
+      "change": "+3",
       "status": "up",
       "title": "Be Mine",
       "artist": "Jimin",
@@ -25,10 +25,10 @@
     },
     {
       "country": "Belarus",
-      "rank": 12,
-      "previousRank": 26,
-      "change": "+14",
-      "status": "up",
+      "rank": 14,
+      "previousRank": 12,
+      "change": "-2",
+      "status": "down",
       "title": "Rebirth (Intro)",
       "artist": "Jimin",
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/b5/84/94b58450-a0cd-ab97-2f30-0ed3608b5e24/196922987588_Cover.jpg/40x40bb.webp",
@@ -36,9 +36,9 @@
     },
     {
       "country": "Belarus",
-      "rank": 63,
-      "previousRank": 68,
-      "change": "+5",
+      "rank": 32,
+      "previousRank": 63,
+      "change": "+31",
       "status": "up",
       "title": "Like Crazy",
       "artist": "Jimin",
@@ -47,21 +47,10 @@
     },
     {
       "country": "Belarus",
-      "rank": 64,
-      "previousRank": 50,
-      "change": "-14",
+      "rank": 73,
+      "previousRank": 71,
+      "change": "-2",
       "status": "down",
-      "title": "Smeraldo Garden Marching Band",
-      "artist": "Jimin & Loco",
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/16/4b/e1164b5b-d6bf-b22d-d5b2-746f85771f93/198704027765_Cover.jpg/40x40bb.webp",
-      "songLink": "https://music.apple.com/us/song/smeraldo-garden-marching-band/1752552299"
-    },
-    {
-      "country": "Belarus",
-      "rank": 71,
-      "previousRank": 73,
-      "change": "+2",
-      "status": "up",
       "title": "Who (Rock Remix)",
       "artist": "Jimin",
       "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/03/6b/25036b82-3a20-1b25-4a76-10d60dd994ed/198704057328_Cover.jpg/40x40bb.webp",
@@ -69,14 +58,14 @@
     },
     {
       "country": "Belarus",
-      "rank": 84,
-      "previousRank": 82,
-      "change": "-2",
+      "rank": 91,
+      "previousRank": 64,
+      "change": "-27",
       "status": "down",
-      "title": "Who (Acoustic Remix)",
-      "artist": "Jimin",
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/03/6b/25036b82-3a20-1b25-4a76-10d60dd994ed/198704057328_Cover.jpg/40x40bb.webp",
-      "songLink": "https://music.apple.com/us/song/who-acoustic-remix/1757558459"
+      "title": "Smeraldo Garden Marching Band",
+      "artist": "Jimin & Loco",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/16/4b/e1164b5b-d6bf-b22d-d5b2-746f85771f93/198704027765_Cover.jpg/40x40bb.webp",
+      "songLink": "https://music.apple.com/us/song/smeraldo-garden-marching-band/1752552299"
     }
   ]
 }
