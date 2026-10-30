@@ -1,17 +1,5 @@
 {
-  "updatedDate": "2026-10-29",
-  "totalEntries": 1,
-  "entries": [
-    {
-      "country": "Belarus",
-      "rank": 67,
-      "previousRank": 89,
-      "change": "+22",
-      "status": "up",
-      "title": "Who",
-      "artist": "Jimin",
-      "image": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/30/c9/2130c9ee-eea1-8502-b912-185368a987f3/198704057335_Cover.jpg/40x40bb.webp",
-      "songLink": "https://music.apple.com/us/song/who/1757553584"
-    }
-  ]
+  "updatedDate": "2026-10-30",
+  "totalEntries": 0,
+  "entries": []
 }
